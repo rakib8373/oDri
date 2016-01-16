@@ -1,0 +1,118 @@
+<?php
+/**
+ * Template part for displaying results in search pages.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package odri
+ */
+
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class('active-masonry'); ?>>
+	<div class="single_welcome_wid">
+
+
+		<?php 
+
+		if( $wp_query->current_post == 0 && !is_paged() && is_front_page() ) { ?>
+			<?php if (has_post_thumbnail()) : ?>
+		
+			<div class="imge-hover-iffect">
+				<div class="tuumb-image-wraper">      
+					<div class="view view-tenth">
+							<?php 	echo the_post_thumbnail('index-thumb'); ?>
+						<div class="mask">
+							 <a href="<?php echo get_permalink(); ?>" class="info" title="Read More...">
+								<i class="fa fa-leanpub"></i>
+							 </a>
+						</div>
+					</div>
+				</div> 
+			</div>
+
+		<?php endif; ?>
+			<div class="tile-content">
+				<div class="category_list">
+					<?php odri_categorie_list(); ?>
+				</div>
+
+				<?php the_title( sprintf( '<h2 class="post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+
+				<?php if ( 'post' === get_post_type() ) : ?>
+				<div class="entry-meta">
+					<?php odri_posted_on(); ?>
+				</div><!-- .entry-meta -->
+				<?php endif; ?>
+
+			</div>
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div><!-- .entry-content -->
+			<hr/>
+			<div class="post-footer-content">
+				<div class="col-md-6 col-sm-6 read-more-area">
+					<?php echo '<a href="' . get_permalink() . '" title="' . __('Continue Reading ', 'odri') . get_the_title() . '" rel="bookmark"><i class="fa fa-leanpub"></i>
+						Read more...</a>'; ?>
+				</div>
+				<div class="col-md-6 col-sm-6 comment-area">
+					<a href="">
+						<i class="fa fa-commenting"></i>
+						<?php odri_entry_footer(); ?>
+					</a>
+				</div>
+			</div>
+		
+		<?php } else { ?>
+			<div class="imge-hover-iffect">       
+				<div class="view view-tenth">
+					 <?php
+						if (has_post_thumbnail()) {
+							echo the_post_thumbnail('index-thumb'); 
+						}
+					?>
+					<div class="mask">
+						 <a href="<?php echo get_permalink(); ?>" class="info" title="Read More...">
+							<i class="fa fa-leanpub"></i>
+						 </a>
+					</div>
+				</div>
+			</div>
+			<div class="tile-content">
+				<div class="category_list">
+					<?php odri_categorie_list(); ?>
+				</div>
+
+				<?php the_title( sprintf( '<h2 class="post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+
+				<?php if ( 'post' === get_post_type() ) : ?>
+				<div class="post-meta">
+					<?php odri_posted_on(); ?>
+				</div><!-- .entry-meta -->
+				<?php endif; ?>
+
+			</div>
+			<div class="entry-content">
+				<?php the_excerpt(); ?>
+			</div><!-- .entry-content -->
+			<hr/>
+			<div class="post-footer-content">
+				<div class="col-md-6 col-sm-6 read-more-area">
+					<?php echo '<a href="' . get_permalink() . '" title="' . __('Continue Reading ', 'odri') . get_the_title() . '" rel="bookmark"><i class="fa fa-leanpub"></i>
+						Read more...</a>'; ?>
+				</div>
+				<div class="col-md-6 col-sm-6 comment-area">
+					<a href="">
+						<i class="fa fa-commenting"></i>
+						<?php odri_entry_footer(); ?>
+					</a>
+				</div>
+			</div>
+		<?php 	}
+
+		?>
+                
+									
+
+	</div>
+</article>

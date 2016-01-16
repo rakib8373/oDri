@@ -1,0 +1,265 @@
+/* This is for tablet display */
+@media (min-width: 768px) and (max-width: 1199px){
+
+#fullwidth_blog .col-lg-4{
+width:50%;
+}
+.internal_page div.col-lg-8{
+float:left;
+width:65%;
+}
+.internal_page div.col-lg-4{
+float:right;
+width:35%;
+}
+.blog_content .single_welcome_wid{
+width:455px;
+}
+
+.content, .sidebar{
+margin-bottom:30px;
+margin-top:30px;
+}
+.portfolio_list{
+margin:30px 0 0px;
+}
+.welcome_widgets{
+margin-bottom:30px;
+}
+#fullwidth_blog, .blog_content #fullwidth_blog{
+margin-top:30px !important;
+}
+.post_navigation{
+margin-bottom:30px;
+}
+.drop-search-wrap.navbar-right {
+  
+}
+
+
+.widget-area {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.paging-navigation {
+  margin-bottom: 30px;
+}
+.widget.widget_nav_menu ul li {
+  padding-left: 0px;
+}
+.sidebar-footer .widget {
+  float: left;
+  width: 50%;
+}
+.bottom-footer-content-wraper .col-md-6 {
+  float: left;
+  width: 50%;
+}
+.search-box form.search-form input[type="search"] {
+  max-width: 200px;
+}
+
+
+}
+
+/* This is for desktop display */
+@media (min-width: 992px) and (max-width: 1199px){
+/*#fullwidth_blog .col-lg-4,  .portfolio_list .col-lg-4{width:33.3333333%;
+}*/
+.blog_content .single_welcome_wid{
+width:285px;
+}
+#fullwidth_blog, .blog_content #fullwidth_blog{
+margin-top:70px;
+}
+.post_navigation{
+margin-bottom:70px;
+}
+.dropdown-search {
+  width: 308px;
+}
+.sidebar-footer .widget {
+  float: left;
+  width: 25%;
+}
+.dropdown-search #dropdown-searchform .search-field {
+  border-radius: 0;
+  width: 98%;
+}
+.search-box form.search-form input[type="search"] {
+  max-width: 280px;
+}
+
+}
+
+/* This is for bigger display */
+@media (min-width: 1200px){
+
+.blog_content .single_welcome_wid{
+width:360px;
+}
+
+#fullwidth_blog, .blog_content #fullwidth_blog{
+margin-top:50px;
+}
+
+}
+
+/* This is for mobile(vertical) display */
+@media (max-width: 767px){
+.logo {margin-bottom:40px;
+text-align:center;
+}
+span.logo_border{
+margin:0 auto 15px;
+}
+.logo p{
+margin:0 auto;
+}
+.logo{
+margin-bottom:30px;
+}
+.single_welcome_wid{
+margin:2px 2px 25px;
+}
+.single_welcome_wid {
+  width: 100%;
+}
+
+#fullwidth_blog, .blog_content #fullwidth_blog{
+margin-top:30px;
+}
+.post_navigation{
+margin-bottom:30px;
+}
+
+.comment-area {
+  margin-top: 15px;
+}
+.widget-area {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.blog_content {
+  margin-left: 0;
+}
+
+.blog_content .single_welcome_wid {
+  margin-left: 0;
+}
+
+.imge-hover-iffect {
+  width: 98%;
+}
+
+.archive_header {
+  margin-left: 0;
+}
+
+/*new tab design*/
+.drop-search-wrap.navbar-right {
+  display: none !important;
+}
+.nav.navbar-nav > li {
+  width: 100%;
+}
+.nav > li > a {
+  border-top: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+}
+.navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
+  padding: 10px 30px;
+}
+
+li.dropdown-submenu > ul.dropdown-menu li a{
+  padding: 10px 35px;
+}
+
+li.dropdown-submenu > ul.dropdown-menu > li > a {
+  padding: 15px 0 15px 45px !important;
+}
+.navbar-toggle {
+  background-color: #ddd;
+  border: 20px none;
+  bottom: 20px;
+  box-shadow: none;
+  position: absolute;
+  right: 0;
+}
+
+.navbar-toggle i {
+  font-size: 20px;
+}
+
+.post-footer-content .col-md-6 {
+  float: left;
+  width: 50%;
+}
+.comment-area {
+  margin-top: 0;
+}
+
+.bottom-footer-content-wraper .col-md-6 {
+  float: left;
+  width: 50%;
+}
+
+form.search-form input[type="submit"] {
+  background: #f1f1f1 url("../img/search_icon.png") no-repeat scroll 20px 17px;
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 41px;
+  margin: 0;
+  padding: 0 !important;
+  position: absolute;
+  right: 0;
+  text-indent: -9999px;
+  top: 0;
+  width: 45px;
+}
+.search-toggle {
+  bottom: -8px;
+  color: hsl(0, 0%, 25%);
+  cursor: pointer;
+  padding: 14px 20px;
+  position: absolute;
+  right: -15px;
+  text-align: center;
+  top: inherit;
+}
+
+.scrollup {
+  bottom: 20px;
+  right: 20px;
+}
+
+}
+
+/* This is for mobile(horizontal) display */
+@media screen and (max-width: 400px){
+  aside.widget {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+.bottom-footer-content-wraper .col-md-6 {
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+
+.social_area {
+  margin: 0 auto 15px;
+  padding-bottom: 25px;
+  width: 80px;
+}
+
+.menu-items {
+  margin: 0;
+  padding: 0;
+}
+
+}
