@@ -4,7 +4,7 @@ Theme URI: http://mrakib.me/odri
 Author: rakib
 Author URI: http://mrakib.me
 Description: Odri is a device friendly, super clean WordPress blog theme. Odri is an awesome option whether you are building a site, a personal, a traveller, a lifestyle or a blog and so on. The header is customizable, you can use, an image or text. Text color also can be changed. In mobile view when menu expanded you can see search bar bottom of the menu. Odri support all post format. The featured image is also supported. You have the additional option of displaying widget at the bottom & and can also use social menu at the bottom. Just use your social site URL icon automatically picked up. 
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: odri
@@ -1007,6 +1007,12 @@ aside.widget_tag_cloud div.tagcloud a {
 /*--------------------------------------------------------------
 # Posts and pages
 --------------------------------------------------------------*/
+
+.updated:not(.published) {
+    display: none;
+  }
+
+
 #main{
   margin-left: 0px;
 }
